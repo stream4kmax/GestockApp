@@ -17,6 +17,9 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
+      - name: Generate Android folder
+        run: flutter create . --platforms=android
+        working-directory: gestock_pos_etape1/gestock_pos
       - name: Get dependencies
         run: flutter pub get
         working-directory: gestock_pos_etape1/gestock_pos
