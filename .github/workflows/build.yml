@@ -24,7 +24,7 @@ jobs:
         run: flutter pub get
         working-directory: gestock_pos_etape1/gestock_pos
       - name: Build APK
-        run: flutter build apk --release.
+        run: flutter build apk --release
         working-directory: gestock_pos_etape1/gestock_pos
       - name: Upload APK
         uses: actions/upload-artifact@v4
